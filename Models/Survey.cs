@@ -12,7 +12,7 @@ namespace Dojo_Survey_Validations.Models
         [Required]
         public string Location{get;set;}
         
-        [Required]
+        [Required(ErrorMessage="Language Field is required")]
         public string Lang{get;set;}
         
         [CommentLength]
